@@ -1,9 +1,9 @@
-import { Container } from "./styles";
+import { Container, Input } from "./styles";
 
 export function Body() {
   return (
     <Container>
-      <input type="text" placeholder="Adicione uma nova tarefa" />
+      <Input type="text" placeholder="Adicione uma nova tarefa"/>
       <button>Criar</button>
     </Container>
   )
