@@ -86,4 +86,47 @@ export const Container = styled.body`
       margin-top: 16px;
     }
   }
+
+  ul {
+    li {
+      background: var(--gray-500);
+      color: var(--gray-100);
+      display: flex;
+      height: 4.5rem;
+      margin-bottom: 0.75rem;
+      position: relative;
+      border: solid 1px var(--gray-400);
+      border-radius: 8px;
+
+      &:first-child {
+        margin-top: 1.5rem;
+      }
+
+      div {
+        display: flex;
+        gap: 12px;
+
+        input {
+          margin-left: 1rem;
+          margin-top: 1rem;
+          background: var(--gray-500);
+          border-radius: 9px;
+        }
+
+        p {
+          max-width: 90%;
+          margin-top: 13px;
+        }
+      }
+     
+      button {
+        background: none;
+        border: none;
+        color: var(--gray-300);
+        position: absolute;
+        right: 1rem;
+        top: 1rem;
+      }
+    }
+  }
 `
