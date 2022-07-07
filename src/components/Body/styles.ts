@@ -97,10 +97,22 @@ export const Container = styled.body`
       position: relative;
       border: solid 1px var(--gray-400);
       border-radius: 8px;
+
+      input {
+        width: 17px;
+        height: 17px;
+        border: solid 1px var(--blue);
+        border-radius: 99px !important;
+      }
       
       .completed {
         color: var(--gray-300);
         text-decoration: line-through;
+        
+        input { 
+          border: solid 1px var(--purple-dark);
+          background: var(--purple-dark);
+        }
       }
 
       &:first-child {
