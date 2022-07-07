@@ -97,6 +97,11 @@ export const Container = styled.body`
       position: relative;
       border: solid 1px var(--gray-400);
       border-radius: 8px;
+      
+      .completed {
+        color: var(--gray-300);
+        text-decoration: line-through;
+      }
 
       &:first-child {
         margin-top: 1.5rem;
