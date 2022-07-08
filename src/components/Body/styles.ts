@@ -39,11 +39,8 @@ export const Container = styled.body`
 `
 
   export const Content = styled.section`
-  border-top: 1px solid var(--gray-400);
   width: 46rem;
   margin: 4rem auto;
-  border-radius: 8px;
-
 
   header {
     margin-top: 1.5rem;
@@ -72,13 +69,15 @@ export const Container = styled.body`
   }
 
   > div {
+    border-radius: 8px;
+    border-top: 1px solid var(--gray-400);
     color: var(--gray-300);
     display: flex;
     flex-direction: column;
     width: 46rem;
-    margin: 0 auto;
+    margin: 1.5rem auto;
     align-items: center;
-    margin-top: 5.5rem;
+    padding-top: 4rem;
     line-height: 140%;
     
     span {

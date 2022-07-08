@@ -54,7 +54,7 @@ export function Body() {
         <header>
           <div>
             Tarefas Criadas
-            <span>0</span>
+            <span>{tasks.length}</span>
           </div>
           <div>
             Concluidas
