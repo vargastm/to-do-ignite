@@ -39,6 +39,8 @@ export function Body() {
     setTasks(filteredTasks)
   }
 
+  const completedTasks = tasks.filter(task => task.isComplete).length
+
   return (
     <Container>
       <div>
@@ -58,7 +60,11 @@ export function Body() {
           </div>
           <div>
             Concluidas
-            <span>0</span>
+            {tasks.length > 0 ? (
+              <span>{completedTasks} de {tasks.length}</span>
+              ) : (
+              <span>0</span>
+              )}
           </div>
         </header>
 
