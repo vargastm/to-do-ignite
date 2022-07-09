@@ -1,8 +1,8 @@
 import styled from 'styled-components'
 
-export const Container = styled.body`
+export const Container = styled.div`
   background: #1A1A1A;
-  height: calc(100vh - 192px);
+  min-height: calc(100vh - 192px);
 
   > div {
     display: flex;
@@ -40,7 +40,7 @@ export const Container = styled.body`
 
   export const Content = styled.section`
   width: 46rem;
-  margin: 4rem auto;
+  margin: 4rem auto 0 auto;
 
   header {
     margin-top: 1.5rem;
@@ -87,6 +87,8 @@ export const Container = styled.body`
   }
 
   ul {
+    padding-bottom: 1rem;
+    
     li {
       background: var(--gray-500);
       color: var(--gray-100);
